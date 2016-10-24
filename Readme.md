@@ -1,7 +1,7 @@
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Дарья Ломако](https://up.htmlacademy.ru/htmlcss/15/user/127056).
-* Наставник: [Альбина Токарчук](https://github.com/endophasie).
+* Наставник: [Альбина Токарчук](https://htmlacademy.ru/profile/id167491).
 
 ---
 
