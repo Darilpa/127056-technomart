@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Главная Техномарт</title>
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
 		<div class="container">
 			<header class="header">
 				<div class="header-top">
 					<div class="inner">
-						<a href="/" class="logo">
+						<a class="logo">
 							<img src="img/logo.svg" alt="technomart logo" />				
 						</a>
 						<input type="search" placeholder="Поиск" />				
@@ -52,7 +53,7 @@
 									<a href="#">Компания</a>
 								</li>
 								<li>
-									<a href="#">Каталог</a>
+									<a href="catalog.html">Каталог</a>
 								</li>
 								<li>
 									<a href="#">Новости</a>
@@ -79,27 +80,30 @@
 								<span class="section-label">new</span>
 								<div class="section-title">Материалы</div>
 								<div class="section-body">
-									<span>На любой вкус</span>
+									<a href="#">На любой вкус</a>
 								</div>
 							</a>
-							<a href="#!" class="section">
+							<div class="section">
 								<div class="section-title">Инструмент</div>
 								<div class="section-body">
-									<span>На все случаи жизни</span>
+									<a href="#">На все случаи жизни</a>
 								</div>
-							</a>
-							<a href="#!" class="section">
+							</div>
+							<div class="section">
 								<div class="section-title">Техника</div>
 								<div class="section-body">
-									<span>Для стройки</span>
+									<a href="#">Для стройки</a>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="section-slider-line">
 							<div class="section-slider">
+								<button class="section-slider-prev">влево</button>
+								<button class="section-slider-next">вправо</button>
+								<!-- спрятать текст -->
 								<ul class="slider">
 									<li>
-										<img class="slider-img" src="img/slider1.png" />				
+										<img class="slider-img" src="img/mat.png" />				
 										<div class="slider-header">
 											<div class="slider-title">Перфораторы</div>
 											<span class="slider-description">Настоящие мужские игрушки</span>
@@ -109,18 +113,18 @@
 								</ul>
 							</div>
 							<div class="section-slider-blocks">
-								<a href="#!" class="section">
+								<div class="section">
 									<div class="section-title">Скидки 50%</div>
 									<div class="section-body">
-										<span>На 350 товаров</span>
+										<a href="#">>На 350 товаров</a>
 									</div>
-								</a>
-								<a href="#!" class="section">
+								</div>
+								<div class="section">
 									<div class="section-title">Доставка</div>
 									<div class="section-body">
-										<span>Бесплатно</span>
+										<a href="#">Бесплатно</a>
 									</div>
-								</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -134,64 +138,63 @@
 
 						<ul class="products-list">
 							<li class="product">
-								<img src="" alt="" class="product-img" />				
+								<img src="img/bosch9000.jpg" class="product-img" />				
 								<h3>Перфоратор BOSCH BFG 9000</h3>
 								<div class="product-price-old">32500 P.</div>
 								<div class="product-price">25500 P.</div>
 							</li>
 							<li class="product">
-								<img src="" alt="" class="product-img" />				
+								<img src="img/bosch3000.jpg" class="product-img" />				
 								<h3>Перфоратор BOSCH BFG 3000</h3>
 								<div class="product-price-old">22500 P.</div>
 								<div class="product-price">15500 P.</div>
 							</li>
 							<li class="product">
-								<img src="" alt="" class="product-img" />				
+								<img src="img/bosch6000.jpg" class="product-img" />				
 								<h3>Перфоратор BOSCH BFG 6000</h3>
 								<div class="product-price-old">30500 P.</div>
 								<div class="product-price">25500 P.</div>
 							</li>
 							<li class="product">
 								<span class="product-label">new</span>
-								<img src="" alt="" class="product-img" />				
+								<img src="img/bosch2000.jpg" class="product-img" />				
 								<h3>Перфоратор BOSCH BFG 2000</h3>
 								<div class="product-price-old"></div>
 								<div class="product-price">15500 P.</div>
 							</li>
-
 						</ul>
 					</div>
 				</section>
 				<section class="vendors">
 					<div class="inner">
 						<header class="vendors-header">
-							<h2 class="vendors-title">Популярные товары</h2>
+							<h2 class="vendors-title">Популярные производители:</h2>
 							<a href="#!" class="vendors-link">Все популярные товары</a>
 						</header>
 						<ul class="vendors-list">
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_bosch.jpg" alt="bosch" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_makita.jpg" alt="makita" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_dewalt.jpg" alt="dewalt" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_интерскол.jpg" alt="interskol" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_hitachi.jpg" alt="hitachi" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_lg.jpg" alt="lg" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_aeg.jpg" alt="aeg" />
 							</li>
 							<li class="vendor">
-								<img class="vendor-img" src="" alt="" />
+								<img class="vendor-img" src="img/logo_metabo.jpg" alt="metabo" />
 							</li>
 						</ul>
 					</div>
@@ -239,7 +242,7 @@
 							Вы можете забрать товар сами, <br />
 							заехав в наш офис:
 						</div>
-						<img class="contacts-img" src="" alt="" />
+						<img class="contacts-img" src="img/map.jpg" alt="map" />
 						<a href="#!" class="contacts-btn">Заблудились? Напишите нам!</a>
 					</section>
 				</div>
