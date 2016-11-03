@@ -4,7 +4,8 @@ body {
 	color: #000000;
 }
 
-h2 {font: 18px normal Cuprum,sans-serif;
+h2 {
+	font: 18px normal Cuprum,sans-serif;
 	line-height: 24px;
 	color: #000000;
 }
