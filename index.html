@@ -9,11 +9,15 @@
 		<div class="container">
 			<header class="header">
 				<div class="header-top">
-					<div class="inner">
+					<div class="inner clearfix">
 						<a class="logo">
 							<img src="img/logo.svg" alt="technomart logo" />				
 						</a>
-						<input type="search" placeholder="Поиск" />				
+						<form name="search" action="#!" class="header-search">
+							<input type="search" placeholder="Поиск" />	
+							<button>найти</button>
+							<!-- спрятать текст в кнопке 1-->
+						</form>
 						<div class="header-cart-wrapper">
 							<a href="#!" class="header-bookmark">
 								Закладки:
@@ -48,25 +52,18 @@
 							<ul>
 								<li>
 									<a>Главная</a>
-								</li>
 								<li>
 									<a href="#!">Компания</a>
-								</li>
 								<li>
 									<a href="catalog.html">Каталог</a>
-								</li>
 								<li>
 									<a href="#!">Новости</a>
-								</li>
 								<li>
 									<a href="#!">Спецпредложения</a>
-								</li>
 								<li>
 									<a href="#!">Доставка</a>
-								</li>
 								<li>
 									<a href="#!">Контакты</a>
-								</li>
 							</ul>
 						</nav>
 					</div>
@@ -75,12 +72,14 @@
 			<main>
 				<div class="sections">
 					<div class="inner">
-						<div class="sections-top-line">
+						<div class="sections-top-line clearfix">
+							<div class="section">
 								<span class="section-label">new</span>
 								<div class="section-title">Материалы</div>
 								<div class="section-body">
 									<a href="#!">На любой вкус</a>
 								</div>
+							</div>
 							<div class="section">
 								<div class="section-title">Инструмент</div>
 								<div class="section-body">
@@ -94,21 +93,19 @@
 								</div>
 							</div>
 						</div>
-						<div class="section-slider-line">
+						<div class="section-slider-line clearfix">
 							<div class="section-slider">
 								<button class="section-slider-prev">влево</button>
 								<button class="section-slider-next">вправо</button>
 								<!-- спрятать текст -->
-								<ul class="slider">
-									<li>
-										<img class="slider-img" src="img/mat.png" />				
-										<div class="slider-header">
-											<div class="slider-title">Перфораторы</div>
-											<span class="slider-description">Настоящие мужские игрушки</span>
-										</div>
-										<a href="#!" class="slider-link">Открыть каталог</a>
-									</li>
-								</ul>
+								<div class="slider">
+									<img class="slider-img" src="img/mat.png" />				
+									<div class="slider-header">
+										<div class="slider-title">Перфораторы</div>
+										<span class="slider-description">Настоящие мужские игрушки</span>
+									</div>
+									<a href="#!" class="slider-link">Открыть каталог</a>
+								</div>
 							</div>
 							<div class="section-slider-blocks">
 								<div class="section">
@@ -129,12 +126,12 @@
 				</div>
 				<section class="products">
 					<div class="inner">
-						<header class="products-header">
+						<header class="products-header clearfix">
 							<h2 class="products-title">Популярные товары</h2>
 							<a href="#!" class="products-link">Все популярные товары</a>
 						</header>
 
-						<ul class="products-list">
+						<ul class="products-list clearfix">
 							<li class="product">
 								<img src="img/bosch9000.jpg" class="product-img" />				
 								<h3>Перфоратор BOSCH BFG 9000</h3>
@@ -165,11 +162,11 @@
 				</section>
 				<section class="vendors">
 					<div class="inner">
-						<header class="vendors-header">
+						<header class="vendors-header clearfix">
 							<h2 class="vendors-title">Популярные производители:</h2>
 							<a href="#!" class="vendors-link">Все популярные производители</a>
 						</header>
-						<ul class="vendors-list">
+						<ul class="vendors-list clearfix">
 							<li class="vendor">
 								<a href="#!"><img class="vendor-img" src="img/logo_bosch.jpg" alt="bosch" /></a>
 							</li>
@@ -180,7 +177,7 @@
 								<a href="#!"><img class="vendor-img" src="img/logo_dewalt.jpg" alt="dewalt" /></a>
 							</li>
 							<li class="vendor">
-								<a href="#!"><img class="vendor-img" src="img/logo_interskol.jpg.jpg" alt="interskol" /></a>
+								<a href="#!"><img class="vendor-img" src="img/logo_interskol.jpg" alt="interskol" /></a>
 							</li>
 							<li class="vendor">
 								<a href="#!"><img class="vendor-img" src="img/logo_hitachi.jpg" alt="hitachi" /></a>
@@ -198,58 +195,63 @@
 					</div>
 				</section>
 				<section class="services">
-					<div class="inner">
-						<h2 class="services-title">Сервисы</h2>
-						<p class="services-description">Хороший интернет-магазин отличается от плохого не только ценами! <br />
-						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-						<ul class="services-list">
-							<li class="services-item active"><a href="#!">Доставка</a></li>
-							<li class="services-item"><a href="#!">Гарантия</a></li>
-							<li class="services-item"><a href="#!">Кредит</a></li>
-						</ul>
-						<div class="services-item-description">
-							<div class="services-item-title">Доставка</div>
-							<div class="services-item-body">
-								Мы с удовольствием доставим ваш товар прямо <br />
-								к вашему подъезду совершенно бесплатно! <br />
-								Ведь мы неплохо заработаем, <br />
-								поднимая его на ваш этаж!
+					<div class="inner clearfix">
+						<div class="servises-content">
+							<div class="servises-main-text">
+								<h2 class="services-title">Сервисы</h2>
+								<p class="services-description">Хороший интернет-магазин отличается от плохого не только ценами! <br />
+								Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+							</div>	
+							<ul class="services-list">
+								<li class="services-item active"><a href="#!">Доставка</a></li>
+								<li class="services-item"><a href="#!">Гарантия</a></li>
+								<li class="services-item"><a href="#!">Кредит</a></li>
+							</ul>
+							<div class="services-item-description">
+								<div class="services-item-title">Доставка</div>
+								<div class="services-item-body">
+									Мы с удовольствием доставим ваш товар прямо <br />
+									к вашему подъезду совершенно бесплатно! <br />
+									Ведь мы неплохо заработаем, <br />
+									поднимая его на ваш этаж!
+								</div>
 							</div>
 						</div>
-
 					</div>
 				</section>
-				<div>
-					<section class="about-us">
-						<h2 class="about-us-title">компания «Техномарт»</h2>
-						<div class="about-us-text">
-							<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-							<p>Мы можем доставить ваш товар в самые отдаленные точки России! <br />
-							Техномарт работает со многими транспортными компаниями: </p>
-						</div>
-						<ul class="about-us-list">
-							<li>Деловые линии</li>
-							<li>Автотрейдинг</li>
-							<li>ЖелДорЭкспедиция</li>
-						</ul>
-						<a href="#!" class="about-us-btn">Подробнее о компании</a>
-					</section>
-					<section class="contacts">
-						<h2 class="contacts-title">Контакты</h2>
-						<div class="contacts-text">
-							Вы можете забрать товар сами, <br />
-							заехав в наш офис:
-						</div>
-						<div class="contacts-map">
-							<img class="contacts-img" src="img/map.jpg" alt="map" />
-							<a href="#!" class="contacts-btn">Заблудились? Напишите нам!</a>
-						</div>
-					</section>
+				<div class="inner">
+					<div class="about-us-contacts clearfix">
+						<section class="about-us">
+							<h2 class="about-us-title">компания «Техномарт»</h2>
+							<div class="about-us-text">
+								<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+								<p>Мы можем доставить ваш товар в самые отдаленные точки России! <br />
+								Техномарт работает со многими транспортными компаниями: </p>
+							</div>
+							<ul class="about-us-list">
+								<li>Деловые линии</li>
+								<li>Автотрейдинг</li>
+								<li>ЖелДорЭкспедиция</li>
+							</ul>
+							<a href="#!" class="about-us-btn">Подробнее о компании</a>
+						</section>
+						<section class="contacts">
+							<h2 class="contacts-title">Контакты</h2>
+							<div class="contacts-text">
+								Вы можете забрать товар сами, <br />
+								заехав в наш офис:
+							</div>
+							<div class="contacts-map">
+								<img class="contacts-img" src="img/map.jpg" alt="map" />
+								<a href="#!" class="contacts-btn">Заблудились? Напишите нам!</a>
+							</div>
+						</section>
+					</div>
 				</div>
 			</main>
 			<footer class="footer">
 				<div class="footer-top">
-					<div class="inner">
+					<div class="inner clearfix">		
 						<div class="footer-top-left">
 							<a href="#!" class="footer-logo">
 								<img src="img/logo.svg" alt="technomart logo" />				
@@ -261,23 +263,23 @@
 						</div>	
 						<div class="footer-top-right">
 							<ul class="footer-nav">
-								<li><a href="#!">Компания</a></li>
-								<li><a href="#!">Новости</a></li>
-								<li><a href="catalog.html">Каталог</a></li>
-								<li><a href="#!">Доставка</a></li>
-								<li><a href="#!">Контакты</a></li>
+								<li><a href="#!">Компания</a>
+								<li><a href="#!">Новости</a>
+								<li><a href="catalog.html">Каталог</a>
+								<li><a href="#!">Доставка</a>
+								<li><a href="#!">Контакты</a>
 							</ul>
 							<ul class="footer-products">
-								<li><a href="#!">Материалы</a></li>
-								<li><a href="#!">Техникак</a></li>
-								<li><a href="#!">Инструмент</a></li>
-								<li><a href="#!">Спецпредложения</a></li>
+								<li><a href="#!">Материалы</a>
+								<li><a href="#!">Техникак</a>
+								<li><a href="#!">Инструмент</a>
+								<li><a href="#!">Спецпредложения</a>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="footer-bottom">
-					<div class="inner">
+					<div class="inner clearfix">		
 						<div class="footer-bottom-text">
 							© 2010–2016 Компания «Техномарт» <br />
 							Все права защищены
@@ -287,14 +289,12 @@
 							<li><a class="social-btn social-btn-fb" href="#!">фейсбук</a></li>
 							<li><a class="social-btn social-btn-inst" href="#!">инстаграм</a></li>
 						</ul>
-						<div class="footer-bottom-link">
-							Обратная связь: <br />
-							<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-						</div>
-						<div class="footer-bottom-link">
-							Разработано — <br />
-							<a href="htmlacademy.ru">htmlacademy.ru</a>
-						</div>
+						<ul class="footer-bottom-link">
+							<li>Обратная связь: <br />
+								<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+							<li>Разработано — <br />
+								<a href="htmlacademy.ru">htmlacademy.ru</a></li>
+						</ul>
 					</div>
 				</div>
 			</footer>
