@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Главная Техномарт</title>
 		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
@@ -11,12 +12,11 @@
 				<div class="header-top">
 					<div class="inner clearfix">
 						<a class="logo">
-							<img src="img/logo.svg" alt="technomart logo" />				
+							<span>Техномарт</span>				
 						</a>
 						<form name="search" action="#!" class="header-search">
-							<input type="search" placeholder="Поиск" />	
-							<button>найти</button>
-							<!-- спрятать текст в кнопке 1-->
+							<input type="text" placeholder="Поиск:" class="header-search-input" />
+							<button class="header-search-button"></button>
 						</form>
 						<div class="header-cart-wrapper">
 							<a href="#!" class="header-bookmark">
@@ -33,20 +33,21 @@
 				</div>
 				<div class="header-info">
 					<div class="inner">
-						<div class="header-info-text">
-							Интернет-магазин
-							<br />					
-							строительных материалов
-							<br />					
-							и инструментов для ремонта
-						</div>
-						<div class="header-info-contacts">
-							<a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
-							<div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-						</div>
-						<div class="header-info-links">
-							<a href="#!" class="login">Войти</a>
-							<a href="#!" class="registration">Регистрация</a>
+						<div class="clearfix">
+							<div class="header-info-text">
+								Интернет-магазин
+								<br />					
+								строительных материалов
+								<br />					
+								и инструментов для ремонта
+							</div>
+							<div class="header-info-contacts">
+								<a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
+								<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+							</div>
+							<div class="header-info-links">
+								<a href="#!" class="login">Войти</a><a href="#!" class="registration">Регистрация</a>
+							</div>
 						</div>
 						<nav class="header-nav">
 							<ul>
@@ -73,20 +74,19 @@
 				<div class="sections">
 					<div class="inner">
 						<div class="sections-top-line clearfix">
-							<div class="section">
-								<span class="section-label">new</span>
+							<div class="section section--material">
 								<div class="section-title">Материалы</div>
 								<div class="section-body">
 									<a href="#!">На любой вкус</a>
 								</div>
 							</div>
-							<div class="section">
+							<div class="section section--instrument">
 								<div class="section-title">Инструмент</div>
 								<div class="section-body">
-									<a href="#!">На все случаи жизни</a>
+									<a href="#!">На все случаи</a>
 								</div>
 							</div>
-							<div class="section">
+							<div class="section section--mechanism">
 								<div class="section-title">Техника</div>
 								<div class="section-body">
 									<a href="#!">Для стройки</a>
@@ -98,23 +98,23 @@
 								<button class="section-slider-prev">влево</button>
 								<button class="section-slider-next">вправо</button>
 								<!-- спрятать текст -->
-								<div class="slider">
-									<img class="slider-img" src="img/mat.png" />				
-									<div class="slider-header">
-										<div class="slider-title">Перфораторы</div>
-										<span class="slider-description">Настоящие мужские игрушки</span>
+								<div class="slide">
+									<img class="slide-img" src="img/slide_img.jpg" />				
+									<div class="slide-header">
+										<div class="slide-title">Перфораторы</div>
+										<span class="slide-description">Настоящие мужские игрушки</span>
 									</div>
-									<a href="#!" class="slider-link">Открыть каталог</a>
+									<a href="#!" class="slide-link">Открыть каталог</a>
 								</div>
 							</div>
 							<div class="section-slider-blocks">
-								<div class="section">
+								<div class="section section--sale">
 									<div class="section-title">Скидки 50%</div>
 									<div class="section-body">
 										<a href="#!">На 350 товаров</a>
 									</div>
 								</div>
-								<div class="section">
+								<div class="section section--delivery">
 									<div class="section-title">Доставка</div>
 									<div class="section-body">
 										<a href="#!">Бесплатно</a>
@@ -127,35 +127,51 @@
 				<section class="products">
 					<div class="inner">
 						<header class="products-header clearfix">
-							<h2 class="products-title">Популярные товары</h2>
+							<h2 class="products-title">Популярные товары:</h2>
 							<a href="#!" class="products-link">Все популярные товары</a>
 						</header>
 
 						<ul class="products-list clearfix">
 							<li class="product">
-								<img src="img/bosch9000.jpg" class="product-img" />				
-								<h3>Перфоратор BOSCH BFG 9000</h3>
-								<div class="product-price-old">32500 P.</div>
-								<div class="product-price">25500 P.</div>
+								<div class="product-img-wrap">
+									<img src="img/bosch9000.jpg" class="product-img" />
+								</div>
+								<div class="product-body">
+									<h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
+									<div class="product-price-old">32500 P.</div>
+									<div class="product-price">25500 P.</div>
+								</div>
 							</li>
 							<li class="product">
-								<img src="img/bosch3000.jpg" class="product-img" />				
-								<h3>Перфоратор BOSCH BFG 3000</h3>
-								<div class="product-price-old">22500 P.</div>
-								<div class="product-price">15500 P.</div>
+								<div class="product-img-wrap">
+									<img src="img/bosch3000.jpg" class="product-img" />
+								</div>			
+								<div class="product-body">
+									<h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
+									<div class="product-price-old">22500 P.</div>
+									<div class="product-price">15500 P.</div>
+								</div>
 							</li>
 							<li class="product">
-								<img src="img/bosch6000.jpg" class="product-img" />				
-								<h3>Перфоратор BOSCH BFG 6000</h3>
-								<div class="product-price-old">30500 P.</div>
-								<div class="product-price">25500 P.</div>
+								<div class="product-img-wrap">
+									<img src="img/bosch6000.jpg" class="product-img" />
+								</div>
+								<div class="product-body">
+									<h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
+									<div class="product-price-old">30500 P.</div>
+									<div class="product-price">25500 P.</div>
+								</div>
 							</li>
 							<li class="product">
 								<span class="product-label">new</span>
-								<img src="img/bosch2000.jpg" class="product-img" />				
-								<h3>Перфоратор BOSCH BFG 2000</h3>
-								<div class="product-price-old"></div>
-								<div class="product-price">15500 P.</div>
+								<div class="product-img-wrap">
+									<img src="img/bosch2000.jpg" class="product-img" />
+								</div>
+								<div class="product-body">
+									<h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
+									<div class="product-price-old"></div>
+									<div class="product-price">15500 P.</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -195,7 +211,7 @@
 					</div>
 				</section>
 				<section class="services">
-					<div class="inner clearfix">
+					<div class="inner inner--services clearfix">
 						<div class="servises-content">
 							<div class="servises-main-text">
 								<h2 class="services-title">Сервисы</h2>
@@ -203,9 +219,9 @@
 								Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 							</div>	
 							<ul class="services-list">
-								<li class="services-item active"><a href="#!">Доставка</a></li>
-								<li class="services-item"><a href="#!">Гарантия</a></li>
-								<li class="services-item"><a href="#!">Кредит</a></li>
+								<li class="services-item active"><a href="#!" class="services-list-link">Доставка</a></li>
+								<li class="services-item"><a href="#!" class="services-list-link">Гарантия</a></li>
+								<li class="services-item"><a href="#!" class="services-list-link">Кредит</a></li>
 							</ul>
 							<div class="services-item-description">
 								<div class="services-item-title">Доставка</div>
