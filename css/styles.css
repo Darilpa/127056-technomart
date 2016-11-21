@@ -800,10 +800,14 @@ main {
 	margin-bottom: 20px;
 	text-align: center;
 	line-height: 146px;
+	position: relative;
 
 	box-sizing: border-box;
 	
 	transition: 250ms;
+}
+.vendor a {
+	position: absolute;top: 0;bottom: 0;left: 0;right: 0;
 }
 .vendor:hover {
 	box-shadow: 0 7px 20px rgba(0,0,0,.4);
