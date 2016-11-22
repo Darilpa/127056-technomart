@@ -726,6 +726,13 @@ main {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
+	transition: 250ms;
+}
+.products-link:hover, .vendors-link:hover {
+  background-color: #ca2c37;
+}
+.products-link:active, .vendors-link:active {
+  background-color: #ba2732;
 }
 
 
@@ -1188,6 +1195,11 @@ footer {}
 	color: #000;
 	text-decoration: none;
 	text-transform: uppercase;
+	
+	transition: 250ms;
+}
+.breadcrumbs a[href]:hover {
+	color: rgba(0,0,0,.5);
 }
 
 .clearfix:after {
@@ -1324,7 +1336,7 @@ footer {}
 	transition: 250ms;
 }
 .sort-btn--down {
-	margin-left: 45px;
+	margin-left: 38px;
 }
 .sort-btn--up:after {
 	top: 50%;
@@ -1582,6 +1594,11 @@ footer {}
 	border-radius: 3px;
 	background: none;
 	cursor: pointer;
+	
+	transition: 250ms;
+}
+.btn-bordered:hover {
+	background: #f7f3ec;
 }
 .range-wrap {
 	background-color: #f7f3ec;
@@ -1638,6 +1655,7 @@ footer {}
 }
 
 .range-input {
+	border: none;
 	width: 95px;
 	line-height: 38px;
 	background-color: #f7f3ec;
