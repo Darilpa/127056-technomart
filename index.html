@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Главная Техномарт</title>
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/styles.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
@@ -97,7 +97,7 @@
 							<div class="section-slider">
 
 								<div class="slide">
-									<img class="slide-img" src="img/slide_img.jpg" alt="some man" />				
+									<img class="slide-img" src="img/slide_img.jpg" width="620" height="266" alt="some man" />				
 									<div class="slide-header">
 										<div class="slide-title">Перфораторы</div>
 										<div class="slide-description">Настоящие мужские игрушки</div>
@@ -106,7 +106,15 @@
 								</div>
 								<button class="section-slider-prev">влево</button>
 								<button class="section-slider-next">вправо</button>
-
+								
+								<ul class="section-slider__thumbs">
+									<li class="section-slider__thumb section-slider__thumb--active">
+										<a href="#!" class="section-slider__link"></a>
+									</li>
+									<li class="section-slider__thumb">
+										<a href="#!" class="section-slider__link"></a>
+									</li>
+								</ul>
 
 							</div>
 							<div class="section-slider-blocks">
@@ -275,7 +283,7 @@
 								заехав в наш офис:
 							</div>
 							<div class="contacts-map">
-								<a href="#!"><img class="contacts-img" src="img/map.jpg" alt="map" /></a>
+								<a href="#!"><img class="contacts-img" width="300" height="158" src="img/map.jpg" alt="map" /></a>
 								<a href="#!" class="contacts-btn btn-main btn-main--block">Заблудились? Напишите нам!</a>
 							</div>
 						</section>
@@ -332,5 +340,48 @@
 				</div>
 			</footer>
 		</div>
+		
+		
+		<div class="popup write-us popup--hidden">
+			<form action="">
+				<div class="popup__content">
+					<button class="popup__close">close</button>
+					<div class="popup__inner">
+
+						<div class="clearfix write-us__top-line">
+							<div class="popup-formline">
+								<label for="write-us__name" class="popup-formline__label">Ваше имя:</label>
+								<input type="text" id="write-us__name" placeholder="Представьтесь, пожалуйста" class="popup-formline__input" />		
+							</div>
+							<div class="popup-formline">
+								<label for="write-us__email" class="popup-formline__label">Ваш e-mail:</label>
+								<input type="text" id="write-us__email" placeholder="Для отправки ответа" class="popup-formline__input" />		
+							</div>
+						</div>
+
+						<div class="write-us__bottom-line">
+							<div class="popup-formline">
+								<label for="write-us__text" class="popup-formline__label">Текст письма:</label>
+								<textarea placeholder="" id="write-us__text" class="popup-formline__text">В свободной форме</textarea>
+							</div>
+						</div>
+					</div>
+					<div class="popup__footer">
+						<div class="popup__inner">
+							<button class="popup__footer-btn">Отправить</button>
+						</div>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		
+		<div class="popup popup-map popup--hidden">
+			<div class="popup-map__inner">
+				<button class="popup__close">close</button>
+				<img src="img/map-big.jpg" widht="940" height="446" alt="" />
+			</div>
+		</div>
+		
 	</body>
 </html>

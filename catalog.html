@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог Техномарт</title>
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/styles.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
@@ -190,8 +190,8 @@
 									<a href="#!" class="sort-type sort-type--type">По типу</a>
 									<a href="#!" class="sort-type sort-type--func">По функционалу</a>
 									
-									<button class="sort-btn sort-btn--down sort-btn--active"></button>
 									<button class="sort-btn sort-btn--up"></button>
+									<button class="sort-btn sort-btn--down"></button>
 								</div>
 								<h2 class="bside-header-name">Сортировка:</h2>
 							</div>
@@ -395,5 +395,28 @@
 				</div>
 			</footer>
 		</div>
+		
+		<div class="popup popup--cart popup--hidden">
+			<form action="">
+				<div class="popup__content">
+				
+					<button class="popup__close">close</button>
+					<div class="popup__inner">
+						<div class="popup-cart-body">
+							<img src="img/popup_ok.png" alt="" />
+							<span>Товар добавлен в корзину!</span>
+						</div>
+					</div>
+					<div class="popup__footer">
+						<div class="popup__inner clearfix">
+							<button class="popup__footer-btn">Оформить заказ</button>
+							<button class="popup__footer-btn popup__footer-btn--white">Продолжить покупки</button>
+						</div>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		
 	</body>
 </html>
